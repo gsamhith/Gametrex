@@ -1,0 +1,20 @@
+<%- include ("partials/dbheader.ejs") %>
+<!-- main content -->
+<div class="main">
+    <div class="main-content">
+        <h1>Hello, Player</h1>
+        <h2>Welcome to your Dashboard</h2>
+        <form action="/players/logout">
+            <button id="main-btn">
+                Logout
+            </button>
+        </form>
+    </div>
+    <!-- <div class="main-img">
+        <img src="/images/main-img.jpg" alt="">
+    </div> -->
+</div>
+<!-- email -->
+<%- include ("email.ejs") %>
+<!-- footer -->
+<%- include ("partials/footer.ejs") %>

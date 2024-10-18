@@ -1,0 +1,167 @@
+<%- include ("partials/dbheader.ejs") %>
+<div class="achievements-container">
+    <h1>Earned/Progress</h1>
+    <div class="achievement">
+        <% achievements.forEach(achievements => { %>
+        <div class="achieve">
+            <%if (achievements.game_id === 1) { %>
+                <img src="/images/valorant logo.png" alt="Valorant">
+                <div class="name-item">
+                    <h3><%= achievements.a_name %></h3>
+                    <h3><%= achievements.item_name %></h3>
+                </div>
+                <h4><%= achievements.date %></h4>
+                <div class="trophy">
+                    <p><%= achievements.rarity %></p>
+                    <%if (achievements.rarity === "Common") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L90 30 L80 100 L50 120 L20 100 L10 30 Z" fill="#bdc3c7" />
+                            <!-- Border -->
+                            <path d="M50 5 L85 30 L80 100 L50 115 L20 100 L15 30 Z" fill="none" stroke="#7f8c8d" stroke-width="5" />
+                        </svg>
+                    <%} else if (achievements.rarity === "Rare") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L90 30 L80 100 L50 120 L20 100 L10 30 Z" fill="#ffd700" />
+                            <!-- Border -->
+                            <path d="M50 5 L85 30 L80 100 L50 115 L20 100 L15 30 Z" fill="none" stroke="#b8860b" stroke-width="5" />
+                          </svg>
+                    <%} else if (achievements.rarity === "Epic") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L100 40 L80 100 L50 120 L20 100 L0 40 Z" fill="#3498db" />
+                            <!-- Border -->
+                            <path d="M50 5 L95 40 L80 100 L50 115 L20 100 L5 40 Z" fill="none" stroke="#2c3e50" stroke-width="5" />
+                        </svg>
+                    <%} else if (achievements.rarity === "Legendary") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L95 35 L85 100 L50 120 L15 100 L5 35 Z" fill="#e74c3c" />
+                            <!-- Border -->
+                            <path d="M50 5 L90 35 L85 100 L50 115 L15 100 L10 35 Z" fill="none" stroke="#c0392b" stroke-width="5" />
+                        </svg>
+                    <%} %>
+                </div>
+                <%} else if (achievements.game_id === 2) { %>
+                <img src="/images/gta logo.png" alt="GTA V">
+                <div class="name-item">
+                    <h3><%= achievements.a_name %></h3>
+                    <h3><%= achievements.item_name %></h3>
+                </div>
+                <h4><%= achievements.date %></h4>
+                <div class="trophy"> 
+                    <p><%= achievements.rarity %></p>
+                    <%if (achievements.rarity === "Common") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L90 30 L80 100 L50 120 L20 100 L10 30 Z" fill="#bdc3c7" />
+                            <!-- Border -->
+                            <path d="M50 5 L85 30 L80 100 L50 115 L20 100 L15 30 Z" fill="none" stroke="#7f8c8d" stroke-width="5" />
+                        </svg>
+                    <%} else if (achievements.rarity === "Rare") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L90 30 L80 100 L50 120 L20 100 L10 30 Z" fill="#ffd700" />
+                            <!-- Border -->
+                            <path d="M50 5 L85 30 L80 100 L50 115 L20 100 L15 30 Z" fill="none" stroke="#b8860b" stroke-width="5" />
+                        </svg>
+                    <%} else if (achievements.rarity === "Epic") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L100 40 L80 100 L50 120 L20 100 L0 40 Z" fill="#3498db" />
+                            <!-- Border -->
+                            <path d="M50 5 L95 40 L80 100 L50 115 L20 100 L5 40 Z" fill="none" stroke="#2c3e50" stroke-width="5" />
+                        </svg>
+                    <%} else if (achievements.rarity === "Legendary") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L95 35 L85 100 L50 120 L15 100 L5 35 Z" fill="#e74c3c" />
+                            <!-- Border -->
+                            <path d="M50 5 L90 35 L85 100 L50 115 L15 100 L10 35 Z" fill="none" stroke="#c0392b" stroke-width="5" />
+                        </svg>
+                    <%} %>
+                </div>
+                <%} else if (achievements.game_id === 4) { %>
+                <img src="/images/forza 5 logo.png" alt="Forza Horizon 5">
+                <div class="name-item">
+                    <h3><%= achievements.a_name %></h3>
+                    <h3><%= achievements.item_name %></h3>
+                </div>
+                <h4><%= achievements.date %></h4>
+                <div class="trophy">
+                    <p><%= achievements.rarity %></p>
+                    <%if (achievements.rarity === "Common") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L90 30 L80 100 L50 120 L20 100 L10 30 Z" fill="#bdc3c7" />
+                            <!-- Border -->
+                            <path d="M50 5 L85 30 L80 100 L50 115 L20 100 L15 30 Z" fill="none" stroke="#7f8c8d" stroke-width="5" />
+                        </svg>
+                    <%} else if (achievements.rarity === "Rare") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L90 30 L80 100 L50 120 L20 100 L10 30 Z" fill="#ffd700" />
+                            <!-- Border -->
+                            <path d="M50 5 L85 30 L80 100 L50 115 L20 100 L15 30 Z" fill="none" stroke="#b8860b" stroke-width="5" />
+                        </svg>
+                    <%} else if (achievements.rarity === "Epic") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L100 40 L80 100 L50 120 L20 100 L0 40 Z" fill="#3498db" />
+                            <!-- Border -->
+                            <path d="M50 5 L95 40 L80 100 L50 115 L20 100 L5 40 Z" fill="none" stroke="#2c3e50" stroke-width="5" />
+                        </svg>
+                    <%} else if (achievements.rarity === "Legendary") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L95 35 L85 100 L50 120 L15 100 L5 35 Z" fill="#e74c3c" />
+                            <!-- Border -->
+                            <path d="M50 5 L90 35 L85 100 L50 115 L15 100 L10 35 Z" fill="none" stroke="#c0392b" stroke-width="5" />
+                        </svg>
+                    <%} %>
+                </div>
+                <%} else if (achievements.game_id === 3) {%>
+                <img src="/images/elder ring logo.png" alt="Elder Ring">
+                <div class="name-item">
+                    <h3><%= achievements.a_name %></h3>
+                    <h3><%= achievements.item_name %></h3>
+                </div>
+                <h4><%= achievements.date %></h4>
+                <div class="trophy">
+                    <p><%= achievements.rarity %></p>
+                    <%if (achievements.rarity === "Common") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L90 30 L80 100 L50 120 L20 100 L10 30 Z" fill="#bdc3c7" />
+                            <!-- Border -->
+                            <path d="M50 5 L85 30 L80 100 L50 115 L20 100 L15 30 Z" fill="none" stroke="#7f8c8d" stroke-width="5" />
+                        </svg>
+                    <%} else if (achievements.rarity === "Rare") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L90 30 L80 100 L50 120 L20 100 L10 30 Z" fill="#ffd700" />
+                            <!-- Border -->
+                            <path d="M50 5 L85 30 L80 100 L50 115 L20 100 L15 30 Z" fill="none" stroke="#b8860b" stroke-width="5" />
+                          </svg>
+                    <%} else if (achievements.rarity === "Epic") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L100 40 L80 100 L50 120 L20 100 L0 40 Z" fill="#3498db" />
+                            <!-- Border -->
+                            <path d="M50 5 L95 40 L80 100 L50 115 L20 100 L5 40 Z" fill="none" stroke="#2c3e50" stroke-width="5" />
+                        </svg>
+                    <%} else if (achievements.rarity === "Legendary") { %>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+                            <!-- Shield shape -->
+                            <path d="M50 0 L95 35 L85 100 L50 120 L15 100 L5 35 Z" fill="#e74c3c" />
+                            <!-- Border -->
+                            <path d="M50 5 L90 35 L85 100 L50 115 L15 100 L10 35 Z" fill="none" stroke="#c0392b" stroke-width="5" />
+                        </svg>
+                    <%} %>
+                </div>
+                <% } %>
+        </div>
+        <% }) %>
+    </div>
+</div>

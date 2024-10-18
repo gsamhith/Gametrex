@@ -1,0 +1,298 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(50, 9, 95);
+    color: white;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../images/10753367copy.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px ;
+    padding: 50px 4em;
+    box-shadow: 0px 5px 20px 0px rgb(72, 15, 132);
+    background-color: rgb(50, 9, 95);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 50px;
+}
+header h1{
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0px 40px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin:0px 25px ;
+}
+.head-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.head-btn form button{
+    background-color: rgb(142, 14, 201);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px 25px;
+}
+.head-btn form .btn-out{
+    background-color: transparent;
+    border: 4px solid rgb(154, 27, 213);
+    color: white;
+    padding: 11px 21px;
+    
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10em ;
+    padding: 50px 4em;
+    margin-bottom: 100px;
+    border-style: solid none none solid;
+    border-color: rgb(154, 27, 213);
+}
+.main h1{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 200px;
+    margin-bottom: 20px;
+}
+.main p{
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 50px;
+    color: rgb(156, 156, 156);
+}
+.main .main-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main form {
+    margin-top: 5 0px;
+}
+.main form button{
+    background-color: rgb(142, 14, 201);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 60px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0px 5emm;
+}
+.main .main-content{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 50px 4em;  
+}
+/* games */
+.games{
+    background-color: rgb(15, 3, 58);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 50px;
+    padding: 20px 0 50px;
+}
+.games h2{
+    font-size: 60px;
+    margin: 0px;
+    padding: 50px 0px 20px 0px;
+    text-align: center;
+}
+.games .card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px 0px;
+}
+.games .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px 50px;
+    border-radius: 20px;
+    background-color: rgb(72, 8, 102);
+    box-shadow: 0px 5px 20px 0px rgb(72, 15, 132);
+}
+.card img{
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+.card h3{
+    font-size: 30px;
+    margin: 0px;
+    padding: 5px 0px;
+}
+.card p{
+    font-size: 20px;
+    margin:10px 0px 5px;
+    padding: 10px 0px;
+    background-color: white;
+    border-radius: 10px;
+}
+.card p a{
+    color: rgb(171, 60, 222);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px 10px;
+    padding: 0px;
+    cursor: pointer;
+}
+/* heighlightnews on home page*/
+.hnews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 50px 200px 80px;
+}
+.hnews-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px 50px;
+    border-radius: 20px;
+    background-color: rgb(72, 8, 102);
+    box-shadow: 0px 5px 20px 0px rgb(72, 15, 132);
+}
+.hnews-card h3{
+    font-size: 50px;
+    margin: 0px;
+    padding: 10px 0px 5px;
+}
+.hnews-card p{
+    font-size: 20px;
+    margin:10px 0px 5px;
+    padding: 10px 0px 20px;
+    border-radius: 10px;
+}
+.hnews-card a{
+    color: rgb(171, 60, 222);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+}
+/* video */
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 20px 0 50px;
+}
+/* email */
+.email{
+    margin: 0px 10em ;
+    margin-top: 150px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column ;
+    background-image: linear-gradient(to right,rgb(50, 9, 95), rgb(77, 9, 109),rgb(50, 9, 95));
+}
+.email h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    margin: 0px;
+    padding: 70px 0px 20px 0px;
+}
+.email p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    margin: 0px;
+    padding: 0px;
+}
+.email form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0em;
+}
+.email form input{
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(223, 161, 236);
+    border-bottom: 5px solid rgb(142, 14, 201);
+    padding: 5px 20px;
+    font-size: 1.2em;
+    margin-right: 50px;
+    color: rgb(0, 0, 0);
+}
+form input{
+    outline: none;
+    border: none;
+}
+form input::placeholder{
+    color: rgb(30, 30, 30);
+}
+.email form button{
+    background-color: rgb(142, 14, 201);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 20px 60px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px ;
+    padding: 50px 4em;
+}

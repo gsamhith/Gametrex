@@ -1,0 +1,28 @@
+<%- include ("partials/dbheader.ejs") %>
+<div class="library-container">
+    <h1>Games</h1>
+    <div class="library">
+        <% games.forEach(game => { %>
+        <div class="game">
+            <%if (game.title === "Valorant") { %>
+            <img src="/images/valorant logo.png" alt="Valorant">
+            <h2><%= game.title %></h2>
+            <h3>Platform: <%= game.platform %></h3>
+            <%} else if (game.title === "GTA V") { %>
+            <img src="/images/gta logo.png" alt="GTA V">
+            <h2><%= game.title %></h2>
+            <h3>Platform: <%= game.platform %></h3>
+            <%} else if (game.title === "Forza Horizon 5") { %>
+            <img src="/images/forza 5 logo.png" alt="Forza Horizon 5">
+            <h2><%= game.title %></h2>
+            <h3>Platform: <%= game.platform %></h3>
+            <%} else if (game.title === "Elder Ring") {%>
+            <img src="/images/elder ring logo.png" alt="Elder Ring">
+            <h2><%= game.title %></h2>
+            <h3>Platform: <%= game.platform %></h3>
+            <% } %>
+        </div>
+        <% }) %>
+    </div>
+</div>
+<%- include ("partials/footer.ejs") %>

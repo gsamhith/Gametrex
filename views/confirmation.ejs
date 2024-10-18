@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Confirmation</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            height: 80vh;
+            margin: 50px;
+            background-image: linear-gradient( rgb(88, 7, 125),rgb(50, 9, 95));
+            /* background-color: rgb(4, 17, 48); */
+        }
+        .send {
+            margin: 10em auto;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: rgb(228, 111, 228);
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #fff;
+            font-size: 2em;
+            margin-top: 0px;
+        }
+        p {
+            color: #fff;
+            font-size: 20px;
+            margin-top: 0px;
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            window.location.href = '/';
+        }, 2500);
+    </script>
+</head>
+<body>
+    <div class="send">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="150" height="150">
+            <circle cx="100" cy="100" r="90" stroke="purple" stroke-width="10" fill="none" />
+            <path d="M50 100 L80 130 L150 70" fill="none" stroke="white" stroke-width="10" stroke-linecap="round">
+            <animate attributeName="d" dur="0.5s" begin="0s" repeatCount="1" values="M50 100 L80 130 L150 70; M55 110 L90 145 L150 70; M50 100 L80 130 L150 70" keyTimes="0; 0.5; 1" />
+            </path>
+        </svg>
+        <h1>Subscription Successful!</h1>
+        <p>Thank you for subscribing. You will receive a confirmation email shortly.</p>
+        <h2>Game On!!!</h2>
+    </div>
+</body>
+</html>

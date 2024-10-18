@@ -1,0 +1,329 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(50, 9, 95);
+    color: white;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../images/dashboardbg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px ;
+    padding: 50px 4em;
+    box-shadow: 0px 5px 20px 0px rgb(72, 15, 132);
+    background-color: rgb(50, 9, 95);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 50px;
+}
+header h1{
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0px 40px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin:0px 25px ;
+}
+.head-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.head-btn form button{
+    background-color: rgb(142, 14, 201);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px 25px;
+}
+.head-btn form .btn-out{
+    background-color: transparent;
+    border: 4px solid rgb(154, 27, 213);
+    color: white;
+    padding: 11px 21px;
+    
+}
+/* search */
+.head-btn input{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(223, 161, 236);
+    border-bottom: 5px solid rgb(142, 14, 201);
+    padding: 5px 20px;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+}
+.head-btn input::placeholder{
+    color: rgb(30, 30, 30);
+}
+.head-btn a{
+    position: relative;
+    right: 50px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 30px;
+
+}
+
+
+/* main */
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10em ;
+    padding: 50px 4em;
+    margin-bottom: 100px;
+    border-style: solid none none solid;
+    border-color: rgb(154, 27, 213);
+}
+.main h1{
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+.main p{
+    font-size: 30px;
+    margin: 0px;
+    padding: 10px 0 0;
+    padding-bottom: 50px;
+    color: rgb(156, 156, 156);
+}
+.main .main-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main form {
+    margin-top: 5 0px;
+}
+.main form button{
+    background-color: rgb(142, 14, 201);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 60px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0px 5emm;
+}
+.main .main-content{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 50px 4em;  
+}
+/* email */
+.email{
+    margin: 0px 10em ;
+    margin-top: 150px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column ;
+    background-image: linear-gradient(to right,rgba(50, 9, 95, 0.5), rgba(77, 9, 109, 0.5),rgba(50, 9, 95, 0.5));
+    background-attachment: fixed;
+}
+.email h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    margin: 0px;
+    padding: 70px 0px 20px 0px;
+}
+.email p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    margin: 0px;
+    padding: 0px;
+}
+.email form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0em;
+}
+.email form input{
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(223, 161, 236);
+    border-bottom: 5px solid rgb(142, 14, 201);
+    padding: 5px 20px;
+    font-size: 1.2em;
+    margin-right: 50px;
+    color: rgb(0, 0, 0);
+}
+form input{
+    outline: none;
+    border: none;
+}
+form input::placeholder{
+    color: rgb(30, 30, 30);
+}
+.email form button{
+    background-color: rgb(142, 14, 201);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 20px 60px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px ;
+    padding: 50px 4em;
+}
+
+/* library  */
+.library-container{
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 10em ;
+    padding: 50px 4em;
+    margin-bottom: 100px;
+    border-style: none solid solid none;
+    border-color: rgb(154, 27, 213);
+}
+.library-container h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.library-container .library{
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+}
+.library-container .library .game{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px 0px rgb(72, 15, 132);
+    margin: 50px 0px;
+    padding: 50px 4em;
+    background-color: rgb(142, 42, 161);
+}
+.game img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+.game h2{
+    font-size: 50px;
+}
+.game p{
+    font-size: 30px;
+}
+
+/* achievments */
+.achievements-container{
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 10em ;
+    padding: 50px 4em;
+    margin-bottom: 100px;
+    border-style: none solid solid none;
+    border-color: rgb(154, 27, 213);
+}
+.achievements-container h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.achievements-container .achievement{
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+}
+.achievements-container .achievement .achieve{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px 0px rgb(72, 15, 132);
+    margin: 50px 0px;
+    padding: 50px 4em;
+    background-color: rgb(142, 42, 161);
+}
+.achieve img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+.achieve .name-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+.achieve h3{
+    font-size: 20px;
+    padding: 0px;
+    margin: 10px 0px;
+}
+.achieve h4{
+    font-size: 25px;
+    width: 200px;
+}
+.achieve .trophy{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trophy p{
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px 5px;
+}
+.trophy svg {
+    width: 60px;
+    height: 60px;
+}

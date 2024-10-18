@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/styles/signin.css">
+</head>
+<body>
+    <div id="signin">
+        <h1>Sign In</h1>
+        <form method="post" action="/players/signin" >
+            <ul>
+                <% if (messages.error) { %>
+                    <li><%= messages.error %></li>
+                <% } %>
+                <% if (messages.success_msg) { %>
+                    <li><%= messages.success_msg %></li>
+                <% } %>
+            </ul>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <div class="small-form">
+                <div class="remember-me">
+                    <input type="checkbox" name="Remember Me" id="rememberMe">
+                <label class="small-label" for="rememberMe">Remember Me</label>
+                </div>
+                <a href="/players/signup">Sign Up</a>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

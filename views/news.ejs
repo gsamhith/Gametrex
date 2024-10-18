@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gametrex</title>
+    <link rel="stylesheet" href="/styles/news.css">
+</head>
+<body class="newspage">
+    <header id="header">
+        <h1>Gametrex</h1>
+        <nav class="navbar">
+            <ul class="navbar">
+                <li><a href="/">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+            </ul>
+        </nav>
+        <div class="head-btn">
+        <form action="/players/signin" method="get">
+            <button class="btn-out" id="nav-btn">
+                Signin
+            </button>
+        </form>
+        <form action="/players/signup" method="get">
+            <button id="nav-btn">
+                Register
+            </button>
+        </form>
+        </div>
+    </header>
+    <div class="news" id="news">
+        <% articles.forEach(article => { %>
+            <div class="news-card">
+                <h3><%= article.title %></h3>
+                <p><%= article.description %></p>
+                <a href="<%= article.url %>" target="_blank">Read more</a>
+            </div>
+        <% }); %>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <p>&copy;<%= new Date().getFullYear();%> Gametrex. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<!-- orignal code in index.html file -->

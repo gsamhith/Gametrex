@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game News</title>
+    <style>
+        /* Add some basic styling for the example */
+        #news-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .article {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Game News</h1>
+    <div id="news-container"></div>
+    <button id="load-more">Read More</button>
+
+    <script>
+        const apiKey = '99bb5a5a8231481ca3709ecc3f25123e'; // Replace with your News API key
+        const endpoint = 'https://newsapi.org/v2/everything';
+        const query = 'games';
+        const language = 'en';
+        let page = 1;
+
+        function fetchNews() {
+            const url = `${endpoint}?q=${query}&language=${language}&apiKey=${apiKey}&page=${page}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'ok') {
+                        displayNews(data.articles);
+                    } else {
+                        console.error('Error fetching news:', data.message);
+                    }
+                })
+                .catch(error => console.error('Error fetching news:', error));
+        }
+
+        function displayNews(articles) {
+            const newsContainer = document.getElementById('news-container');
+
+            articles.forEach(article => {
+                const articleElement = document.createElement('div');
+                articleElement.classList.add('article');
+                articleElement.innerHTML = `
+                    <img src="${article.urlToImage}" alt="${article.title}">
+                    <h2>${article.title}</h2>
+                    <p>${article.description}</p>
+                    <a href="${article.url}" target="_blank">Read more</a>
+                `;
+                newsContainer.appendChild(articleElement);
+            });
+        }
+
+        // Load initial three articles
+        fetchNews();
+
+        // Load more articles when the "Read More" button is clicked
+        document.getElementById('load-more').addEventListener('click', () => {
+            page++;
+            fetchNews();
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!-- news.ejs -->
+<div class="news" id="news">
+    <% articles.forEach(article => { %>
+        <div class="news-card">
+            <h3><%= article.title %></h3>
+            <p><%= article.description %></p>
+            <a href="<%= article.url %>" target="_blank">Read more</a>
+        </div>
+    <% }); %>
+</div>
